@@ -1,10 +1,12 @@
+@import '../../theme/colors.css';
+
 body {
     background-color: #1f1f1f;
     font-family: 'Nunito', sans-serif;
   }
   
   .container {
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +17,7 @@ body {
     justify-content: center;
     width: 400px;
     padding: 20px;
-    background-color: #18344E;
+    background-color: var(--primaryColor);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   }
@@ -68,6 +70,5 @@ button {
   .link {
     color: #fff;
     cursor: pointer;
-    margin-top: 20px;
     text-decoration: underline;
   }

@@ -1,0 +1,23 @@
+@import '../../theme/colors.css';
+
+.auth-header {
+    background-color: var(--primaryBackground);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+}
+
+.title {
+    margin-left: 20px;
+    font-size: 44px;
+    font-weight: bold;
+    color: var(--primaryText);
+    vertical-align: middle;
+}

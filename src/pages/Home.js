@@ -9,6 +9,7 @@ const navigate = useNavigate()
         checkCurrentUser() //when page loads/refreshes, checks to see if the user is authenticated if not navigates to login
         createAuthListener() //creates an "event listener" that switches the form back to sign in if amplify ever tells us the user logs out
         // eslint-disable-next-line
+        
       }, [])
     
       //implemetation of functions described above
@@ -32,8 +33,7 @@ const navigate = useNavigate()
               break
             default:
               break
-          }
-        })
+        }})
       }
 
     return (

@@ -8,6 +8,8 @@ const SignUp = () => {
 
   const handleSignUp = async () => {
     try {
+      const first = document.getElementById('first').value
+      const last = document.getElementById('last').value
       // await Auth.signUp({ username: document.getElementById('username').value, password: document.getElementById('password').value})
       navigate('/confirm/' + document.getElementById('username').value)
     }
@@ -15,7 +17,7 @@ const SignUp = () => {
       console.log(err)
     }
   }
-
+  
   return (
     <div className="container">
       <div className="card">
@@ -23,7 +25,7 @@ const SignUp = () => {
           (
             <div>
               <h1 style={{marginBottom: '40px'}}>Account Type</h1>
-              <button onClick={() => setUserType('user')}>User</button>
+              <button onClick={() => setUserType('individual')}>Individual</button>
               <button onClick={() => setUserType('business')} style={{marginTop: '20px', backgroundColor: '#1f1f1f'}}>Registered Business</button>
             </div>
           )

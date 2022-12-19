@@ -4,8 +4,7 @@ const ForgotPassword = () => {
   const navigate = useNavigate()
 
   const handleForgot = async () => {
-    // Auth.forgotPassword(document.getElementById('username').value)
-    console.log('placeholder for forgot password function')
+    Auth.forgotPassword(document.getElementById('username').value)
       .then((data) => {
         console.log(data)
         navigate('/reset/' + document.getElementById('username').value)

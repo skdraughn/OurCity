@@ -1,14 +1,14 @@
 import { Auth } from "aws-amplify"
 import { useNavigate } from "react-router-dom"
-import './Auth.css'
 import AuthHeader from "./AuthHeader"
+import './Auth.css'
 
 const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
     try {
-      // await Auth.signIn(document.getElementById('username').value, document.getElementById('password').value)
+      await Auth.signIn(document.getElementById('username').value, document.getElementById('password').value)
       navigate("/")
     }
     catch (err) {
@@ -17,9 +17,9 @@ const Login = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container"> 
       <div className="card">
-        <h1>Login</h1>
+        <AuthHeader/>
         <input id={'username'} placeholder={'email'} />
         <input id={'password'} placeholder={'password'} type={'password'} />
         <button id={'login'} onClick={handleLogin}>Login</button>
@@ -27,7 +27,7 @@ const Login = () => {
           <p>Don't have an account?</p>
           <p className='link' id={'navSignup'} onClick={() => { navigate('/signup') }}>Sign Up</p>
         </div>
-        <p className='link' id={'navForgot'} onClick={() => { navigate('/forgot') }}>Forgot Password?</p>
+        <p className='link' id={'navForgot'} onClick={() => { navigate('/forgot') }} style={{marginTop: '-2.5%'}}>Forgot Password?</p>
       </div>
     </div>
   )

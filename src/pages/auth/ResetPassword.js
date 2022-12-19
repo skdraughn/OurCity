@@ -6,7 +6,7 @@ const ResetPassword = () => {
     const { username } = useParams()
 
     const handleReset = async () => {
-        // Auth.forgotPasswordSubmit(username, document.getElementById('authCode').value, document.getElementById('password').value)
+        Auth.forgotPasswordSubmit(username, document.getElementById('authCode').value, document.getElementById('password').value)
         console.log('placeholder for reset password function')
             .then((data) => {
                 console.log(data)

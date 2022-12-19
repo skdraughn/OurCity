@@ -1,6 +1,8 @@
 import { Auth, Hub } from "aws-amplify";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import './Home.css'
+import AuthHeader from "../auth/AuthHeader";
 
 const Home = () => {
 const navigate = useNavigate()
@@ -8,8 +10,8 @@ const navigate = useNavigate()
     useEffect(() => {
         checkCurrentUser() //when page loads/refreshes, checks to see if the user is authenticated if not navigates to login
         createAuthListener() //creates an "event listener" that switches the form back to sign in if amplify ever tells us the user logs out
-        // eslint-disable-next-line
         
+        // eslint-disable-next-line
       }, [])
     
       //implemetation of functions described above
@@ -38,8 +40,9 @@ const navigate = useNavigate()
 
     return (
         <div>
+          <AuthHeader />
             <h1>
-                Signed In
+                Let's get to $10M - your friends ;)
             </h1>
             <button onClick={() => {Auth.signOut()}}>Sign Out</button>
         </div>

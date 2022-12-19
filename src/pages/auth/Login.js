@@ -1,11 +1,9 @@
-import { Auth, Storage } from "aws-amplify"
+import { Auth } from "aws-amplify"
 import { useNavigate } from "react-router-dom"
 import AuthHeader from "./AuthHeader"
 import './Auth.css'
 
 const Login = () => {
-  console.log(Storage.list);
-  Storage.get('promotions-auth-background.jpg').then(result => console.log(result))
   const navigate = useNavigate();
 
   const handleLogin = async () => {

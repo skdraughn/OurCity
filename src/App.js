@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {Amplify} from 'aws-amplify';
-import awsmobile from './aws-exports';
+import {Amplify, Storage} from 'aws-amplify';
+import { useState } from 'react';
 import Login from './pages/auth/Login';
 import SignUp from './pages/auth/SignUp';
 import ConfirmSignUp from './pages/auth/ConfirmSignUp';
@@ -9,14 +9,32 @@ import Home from './pages/home/Home';
 import ForgotPassword from './pages/auth/ForgotPassword';
 import ResetPassword from './pages/auth/ResetPassword';
 import PageNotFound from './pages/PageNotFound';
+import { colors } from './theme/colors';
 
 
 const App = () => {
-  Amplify.configure(awsmobile);
+  
+  
+  Amplify.configure({
+    Auth: {
+      identityPoolId: 'us-east-1:53bf61cd-d208-4d24-80c4-733ba6d08b7e',
+      region: 'us-east-1',
+      userPoolId:  'us-east-1_eOiFsqtOX',
+      userPoolWebClientId: '2lk032avr1rceqbsqvn1oen74n',
+    },
+    Storage: {
+      AWSS3: {
+        bucket: 'librarypromotions29f15a516c094b4e8bfbc0243608e062610-dev',
+        region: 'us-east-1'
+      }
+    }
+  })
+
+  
   
   return (
     <Router>
-      <div>
+      <div style={{backgroundColor: colors.secondaryBackground}}>
           
         <Routes>
           <Route path="/" element={<Home />}/>

@@ -15,6 +15,10 @@
       "auth": {
         "librarypromotions": {},
         "TheLibrary": {}
+      },
+      "storage": {
+        "thelibraryc31d3b25": {},
+        "promotionsimages": {}
       }
     }
   }

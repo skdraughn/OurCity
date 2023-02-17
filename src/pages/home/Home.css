@@ -6,3 +6,8 @@ body {
     background-image: none;
     background-size: 100%;
 }
+
+h2 {
+    font-family: 'Poppins';
+    color: '#fff';
+}

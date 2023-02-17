@@ -40,10 +40,10 @@ const navigate = useNavigate()
 
     return (
         <div>
-          <AuthHeader />
-            <h1>
-                Let's get to $10M - your friends ;)
-            </h1>
+          
+            <h2>
+                The Library - App Store Pending
+            </h2>
             <button onClick={() => {Auth.signOut()}}>Sign Out</button>
         </div>
     )

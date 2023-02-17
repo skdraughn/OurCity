@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+.topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h3 {
+  color: #fff;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +43,5 @@
     transform: rotate(360deg);
   }
 }
+
+

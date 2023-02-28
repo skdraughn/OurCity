@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    background-color: var(--secondaryBackground);
+    background-color: black;
     background-image: none;
     background-size: 100%;
 }
@@ -10,4 +10,8 @@ body {
 h2 {
     font-family: 'Poppins';
     color: '#fff';
+}
+
+span:hover {
+    cursor: pointer;
 }

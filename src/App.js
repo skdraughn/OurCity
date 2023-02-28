@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
 import { Amplify, Storage } from "aws-amplify";
 import { useState } from "react";
 import Login from "./pages/auth/Login";
@@ -16,18 +21,11 @@ import AuthHeader from "./pages/auth/AuthHeader";
 
 const App = () => {
   Amplify.configure(config);
-  
 
   return (
     <div>
-      <div className="topBar">
-        <AuthHeader />
-        <h3 onClick={() => {
-          
-        }}>Privacy Policy</h3>
-      </div>
       <Router>
-        <div style={{ backgroundColor: colors.secondaryBackground }}>
+        <div style={{ backgroundColor: 'black' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/legal" element={<LegalPage />} />

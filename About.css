@@ -1,0 +1,132 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 1388px;
+}
+
+.u-section-1 .u-image-1 {
+  height: 712px;
+  width: 570px;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+  margin: 49px 0 0 auto;
+}
+
+.u-section-1 .u-image-2 {
+  height: 712px;
+  width: 570px;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+  margin: -712px auto 0 0;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 20px 0 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1769px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 587px;
+    width: 470px;
+  }
+
+  .u-section-1 .u-image-2 {
+    margin-top: -587px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1696px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 450px;
+    width: 360px;
+  }
+
+  .u-section-1 .u-image-2 {
+    margin-top: -450px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1526px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 338px;
+    width: 270px;
+  }
+
+  .u-section-1 .u-image-2 {
+    height: 674px;
+    width: 540px;
+    margin-top: -338px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1193px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 213px;
+    width: 170px;
+  }
+
+  .u-section-1 .u-image-2 {
+    height: 424px;
+    width: 340px;
+    margin-top: -213px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 838px;
+}
+
+.u-section-2 .u-image-1 {
+  height: 449px;
+  width: 676px;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+  margin: 0 auto;
+}
+
+.u-section-2 .u-text-1 {
+  margin: 45px 0 44px;
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 748px;
+  }
+
+  .u-section-2 .u-image-1 {
+    height: 359px;
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 615px;
+  }
+
+  .u-section-2 .u-image-1 {
+    height: 226px;
+    width: 340px;
+  }
+}

@@ -46,7 +46,7 @@ const Home = () => {
         src={require("../../assets/TheLibraryLogo.png")}
         style={{ height: 300, width: 300 }}
       ></img>
-      <h2 style={{ color: "white" }}>Club Compass - App Store Pending</h2>
+      <h2 style={{ color: "white" }}>OURCITY - App Store Pending</h2>
       <span style={{ color: "lightblue", textDecoration: 'underline' }} onClick={() => navigate("/legal")}>
         PRIVACY POLICY
       </span>
